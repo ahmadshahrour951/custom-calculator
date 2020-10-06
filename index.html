@@ -61,6 +61,22 @@
       function handleHeight(e) {
         height = parseFloat(e.target.value);
       }
+
+      // This is where the main logic and calculation occurs, currently I check for three different calculations for three shapes
+      function handleSubmit(e) {
+        e.preventDefault();
+        let temp_volume = 0;
+
+        if (shape === 'cone') {
+          temp_volume = Math.PI * radius ** 2 * height;
+        } else if (shape === 'sphere') {
+          temp_volume = (4 / 3) * Math.PI * radius ** 3;
+        } else if (shape === 'cylinder') {
+          temp_volume = (1 / 3) * Math.PI * radius ** 2 * height;
+        }
+
+        volumeOutput.innerHTML = temp_volume.toFixed(2);
+      }
     </script>
   </body>
 </html>
