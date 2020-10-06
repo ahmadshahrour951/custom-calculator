@@ -35,5 +35,19 @@
       <button type="submit" id="form-button" target>Submit</button>
       <h1>Volume: <span id="output-volume">0</span></h1>
     </form>
+
+    <script>
+      // Grab all the interested html elements so that we may use logic and manipulation for display
+      const shapeInput = document.querySelector('#input-shapes');
+      const radiusInput = document.querySelector('#input-radius');
+      const heightInput = document.querySelector('#input-height');
+      const submitButton = document.querySelector('#form-button');
+      const volumeOutput = document.querySelector('#output-volume');
+
+      // This is where I store the values of the current html elements
+      let shape = shapeInput.value || '';
+      let radius = parseFloat(radiusInput.value) || 0;
+      let height = parseFloat(heightInput.value) || 0;
+    </script>
   </body>
 </html>
