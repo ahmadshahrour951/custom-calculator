@@ -6,5 +6,34 @@
     <title>Geometric Shapes Volume Calculator</title>
   </head>
   <body>
+    <form>
+      <h1>Volume Calculator</h1>
+
+      <label for="input-shapes" class="labels">Choose a shape:</label>
+      <select name="input-shapes" id="input-shapes" class="values">
+        <option value="cone">Cone</option>
+        <option value="sphere">Sphere</option>
+        <option value="cylinder">Cylinder</option>
+      </select>
+
+      <label for="input-radius" class="labels">Radius</label>
+      <input
+        name="input-radius"
+        id="input-radius"
+        type="number"
+        class="values"
+      />
+
+      <label for="input-height" class="labels">Height</label>
+      <input
+        name="input-height"
+        id="input-height"
+        type="number"
+        class="values"
+      />
+
+      <button type="submit" id="form-button" target>Submit</button>
+      <h1>Volume: <span id="output-volume">0</span></h1>
+    </form>
   </body>
 </html>
