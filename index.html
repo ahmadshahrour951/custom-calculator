@@ -48,6 +48,19 @@
       let shape = shapeInput.value || '';
       let radius = parseFloat(radiusInput.value) || 0;
       let height = parseFloat(heightInput.value) || 0;
+
+      // Here I define the handler functions that I will use in the events listeners
+      function handleShape(e) {
+        shape = e.target.value;
+      }
+
+      function handleRadius(e) {
+        radius = parseFloat(e.target.value);
+      }
+
+      function handleHeight(e) {
+        height = parseFloat(e.target.value);
+      }
     </script>
   </body>
 </html>
