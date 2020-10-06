@@ -77,6 +77,12 @@
 
         volumeOutput.innerHTML = temp_volume.toFixed(2);
       }
+
+      // This is where I define the eventlisteners passing its handlers
+      shapeInput.addEventListener('change', handleShape);
+      radiusInput.addEventListener('change', handleRadius);
+      heightInput.addEventListener('change', handleHeight);
+      submitButton.addEventListener('click', handleSubmit);
     </script>
   </body>
 </html>
